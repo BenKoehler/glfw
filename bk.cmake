@@ -1,0 +1,5 @@
+set(BK_GLFW_VERSION "3.4")
+function(link_glfw target MOD)
+    target_link_libraries(${target} ${MOD} ${PROJECT_SOURCE_DIR}/thirdparty/glfw/lib/libglfw.so.3.4)
+    target_include_directories(${target} SYSTEM ${MOD} ${PROJECT_SOURCE_DIR}/thirdparty/glfw/include)
+endfunction()
